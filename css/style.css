@@ -51,6 +51,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
 }
 .players{
     display: grid;
@@ -88,7 +89,7 @@ p{
  .match-day{
      display: flex;
      justify-content: space-between;
-     padding: 20px;
+     padding: 30px;
  }
 .days{
     display: grid;
@@ -176,4 +177,41 @@ padding-top: 20px;
 footer{
     text-align: center;
     padding: 20px;
+}
+
+/* Media Queries  */
+
+/* Mobile Device  */
+
+@media only screen and (max-width:688px) {
+    .Top-part{
+        flex-direction: column;
+      }
+      .title{
+          font-size: 100%;
+      }
+      .banner img{
+          width: 100%;
+      }
+
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .match-day{
+        flex-direction: column;
+    }
+    
+    .highlights{
+        flex-direction: column;
+    }
+    .match img{
+        width: 100%;
+    }
+    .match{
+        font-size: 100%;
+    }
 }
