@@ -47,14 +47,16 @@ body{
 
 /* Players Style */
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
     row-gap: 25px;
     column-gap: 30px;
-    margin: 70px;
     background-color: white;
 }
 .player{
@@ -161,7 +163,7 @@ p{
 .logo img{
     display: block;
     width: 483.87px;
-    height: 213px;
+    height: 110px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
